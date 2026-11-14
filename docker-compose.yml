@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: mm_consulting_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: mm
+      POSTGRES_PASSWORD: mm_secret
+      POSTGRES_DB: mm_consulting
+    ports:
+      - "5432:5432"
+    volumes:
+      - mm_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mm -d mm_consulting"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  mm_pgdata:

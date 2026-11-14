@@ -1,26 +1,35 @@
 {
-  "name": "mm-consulting-temp",
-  "version": "0.1.0",
+  "name": "mm-consulting",
+  "version": "1.0.0",
   "private": true,
+  "description": "Site vitrine professionnel et back-office pour un cabinet de génie civil basé à Brazzaville (République du Congo).",
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "next": "16.4.5",
-    "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "dev": "concurrently -n API,WEB,MDNS -c cyan,green,magenta \"npm run dev -w server\" \"npm run dev -w client\" \"npm run mdns\"",
+    "dev:client": "npm run dev -w client",
+    "dev:server": "npm run dev -w server",
+    "mdns": "node scripts/mdns.mjs",
+    "tunnel": "cloudflared tunnel --url http://localhost:5173",
+    "build": "npm run build -w server && npm run build -w client",
+    "build:client": "npm run build -w client",
+    "build:server": "npm run build -w server",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w client",
+    "db:generate": "npm run db:generate -w server",
+    "db:push": "npm run db:push -w server",
+    "db:migrate": "npm run db:migrate -w server",
+    "db:deploy": "npm run db:deploy -w server",
+    "db:seed": "npm run db:seed -w server",
+    "db:studio": "npm run db:studio -w server"
   },
   "devDependencies": {
-    "@tailwindcss/turbopack": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.4.5",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "cloudflared": "^0.7.3",
+    "concurrently": "^9.1.2",
+    "multicast-dns": "^7.2.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
