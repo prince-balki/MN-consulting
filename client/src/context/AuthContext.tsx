@@ -10,7 +10,7 @@ import {
 import { getMe, login as apiLogin } from "../lib/api";
 import type { AuthUser } from "../lib/types";
 
-const TOKEN_KEY = "mm_consulting_token";
+const TOKEN_KEY = "mn_consulting_token";
 
 interface AuthContextValue {
   user: AuthUser | null;

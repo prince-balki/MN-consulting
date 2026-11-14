@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://www.mmconsulting.cg/sitemap.xml
+Sitemap: https://www.mnconsulting.cg/sitemap.xml

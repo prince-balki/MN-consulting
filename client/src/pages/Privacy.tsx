@@ -262,7 +262,7 @@ export default function Privacy() {
               thème émeraude et le thème blanc ;
             </li>
             <li>
-              <strong>mm_consulting_token</strong> : conserve la session des
+              <strong>mn_consulting_token</strong> : conserve la session des
               administrateurs connectés au back-office.
             </li>
           </ul>

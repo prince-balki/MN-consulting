@@ -1,7 +1,7 @@
 import os from "node:os";
 import mdns from "multicast-dns";
 
-const HOSTNAME = "mm-consulting.local";
+const HOSTNAME = "mn-consulting.local";
 const PORT = 5173;
 
 function findLanAddress() {

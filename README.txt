@@ -1,4 +1,4 @@
-MM CONSULTING ENGINEERING — GUIDE COMPLET DU PROJET
+MN CONSULTING ENGINEERING — GUIDE COMPLET DU PROJET
 ===================================================
 
 Version du guide : 2.0
@@ -51,7 +51,7 @@ SOMMAIRE
 1. PRÉSENTATION ET FONCTIONNEMENT GÉNÉRAL
 =========================================
 
-MM Consulting Engineering est un site vitrine pour un cabinet d'ingénierie
+MN Consulting Engineering est un site vitrine pour un cabinet d'ingénierie
 civile basé à Brazzaville, en République du Congo. Le site public présente le
 cabinet, ses expertises et ses réalisations. Une zone d'administration permet
 aux utilisateurs autorisés de consulter les demandes et de gérer certaines
@@ -301,7 +301,7 @@ Adresses locales :
   Connexion admin         http://localhost:5173/admin/login
 
 Le script npm run dev démarre aussi le service mDNS local qui tente d'exposer
-mm-consulting.local sur le réseau. Le nom mDNS dépend de la configuration du
+mn-consulting.local sur le réseau. Le nom mDNS dépend de la configuration du
 réseau et du pare-feu ; l'adresse IP locale du PC reste une alternative.
 
 
@@ -440,7 +440,7 @@ une sauvegarde et un plan de retour arrière.
 ================================================
 
 En local, le seed crée le compte de démonstration suivant :
-  E-mail       admin@mmconsulting.cg
+  E-mail       admin@mnconsulting.cg
   Mot de passe Admin@2026!
 
 Ces identifiants sont réservés au développement. Ne pas exposer une API de

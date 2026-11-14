@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: mm-consulting-api
+    name: mn-consulting-api
     runtime: node
     plan: free
     region: frankfurt

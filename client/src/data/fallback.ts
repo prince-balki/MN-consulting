@@ -3,7 +3,7 @@ import type { Project, Service, TeamMember, Testimonial } from "../lib/types";
 export const SITE = {
   name: "MN Consulting Engineering",
   legalName: "MN Consulting Engineering SARLU",
-  url: "https://www.mmconsulting.cg",
+  url: "https://www.mnconsulting.cg",
   tagline: "Bureau d'études · Architecture · Génie civil",
   description:
     "Bureau d'études techniques et d'ingénierie basé à Moungali, Brazzaville. Architecture, structures, maîtrise d'œuvre, contrôle des travaux et expertises immobilières.",

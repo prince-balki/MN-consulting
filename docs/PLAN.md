@@ -1,4 +1,4 @@
-# Plan directeur — Plateforme digitale MM Consulting
+# Plan directeur — Plateforme digitale MN Consulting
 
 > Cabinet d'ingénierie et de conseil en génie civil — Brazzaville, République du Congo
 > Version 1.0 — Architecture trois tiers, design premium, déploiement Netlify.
@@ -105,7 +105,7 @@ sequenceDiagram
 ## 5. Organisation du dépôt
 
 ```text
-MM-consulting/
+MN-consulting/
 ├── client/                     # SPA React (Netlify)
 │   ├── public/                 # favicon, robots.txt, sitemap, manifest
 │   ├── src/
@@ -400,7 +400,7 @@ npm run dev
 3. Variable d'environnement : `VITE_API_URL=https://<service>.onrender.com/api`.
 4. Déployer, puis mettre à jour `CLIENT_ORIGINS` sur Render avec le domaine
    Netlify exact (et les URL de prévisualisation si nécessaire).
-5. Ajouter le domaine personnalisé (`www.mmconsulting.cg`) et le HTTPS
+5. Ajouter le domaine personnalisé (`www.mnconsulting.cg`) et le HTTPS
    automatique.
 
 > Netlify n'héberge que le frontend statique : l'API et la base restent sur
