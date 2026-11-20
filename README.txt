@@ -619,7 +619,7 @@ Configuration nécessaire :
   1. Dans GitHub, choisir GitHub Actions comme source de publication Pages.
   2. Ajouter la variable Actions VITE_API_URL avec l'URL HTTPS de l'API.
   3. Autoriser l'origine publique Pages dans CLIENT_ORIGINS de l'API.
-  4. Pousser la branche main ou master pour lancer le workflow.
+  4. Après autorisation de mise en ligne, lancer Actions > GitHub Pages > Run workflow.
 
 Le workflow échoue volontairement si VITE_API_URL n'est pas définie. Le
 projet utilise des chemins absolus à partir de la racine. Une URL de dépôt
@@ -691,8 +691,8 @@ que l'envoi d'un message, d'un devis, le login et les opérations admin.
 pull request. Il installe les paquets avec npm ci, génère le client Prisma,
 vérifie TypeScript et compile le serveur et le client.
 
-.github/workflows/github-pages.yml publie le client lors d'un push sur
-main/master ou lors d'un lancement manuel depuis l'onglet Actions. Il nécessite
+.github/workflows/github-pages.yml publie le client uniquement lors d'un
+lancement manuel depuis l'onglet Actions, après autorisation de mise en ligne. Il nécessite
 la variable de dépôt VITE_API_URL et la publication GitHub Pages activée.
 
 Les vérifications s'exécutent dans GitHub Actions après le push. Vérifier

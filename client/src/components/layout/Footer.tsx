@@ -1,4 +1,5 @@
 import {
+  ArrowUp,
   ArrowUpRight,
   Clock,
   Facebook,
@@ -8,7 +9,7 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { SITE } from "../../data/fallback";
 import { fallbackServices } from "../../data/fallback";
 import { Logo } from "../Logo";
@@ -31,6 +32,7 @@ const socials = [
 
 export function Footer() {
   const year = new Date().getFullYear();
+  const { pathname } = useLocation();
 
   return (
     <footer className="theme-surface grain relative overflow-hidden bg-ink text-paper">
@@ -54,13 +56,40 @@ export function Footer() {
             <em className="serif-accent text-gold">concevoir</em>, sécuriser ou
             piloter ?
           </p>
-          <Link
-            to="/devis"
-            className="group inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-gold transition-colors hover:text-paper"
-          >
-            Parlons de votre projet
-            <ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-          </Link>
+          <div className="flex flex-wrap items-center gap-6">
+            <Link
+              to="/devis"
+              className="group inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-gold transition-colors hover:text-paper"
+            >
+              Parlons de votre projet
+              <ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            </Link>
+            <Link
+              to="/"
+              aria-label="Revenir en haut de l’accueil"
+              onClick={(event) => {
+                if (pathname !== "/" || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+                event.preventDefault();
+                window.scrollTo({
+                  top: 0,
+                  behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+                    ? "instant"
+                    : "smooth",
+                });
+              }}
+              className="group relative inline-flex min-h-14 items-center gap-4 overflow-hidden rounded-full border border-jade-light/30 bg-[linear-gradient(120deg,rgba(95,227,191,0.12),rgba(233,183,91,0.08))] py-2 pl-5 pr-2 text-paper shadow-[0_8px_30px_-15px_rgba(95,227,191,0.5)] backdrop-blur-md transition-colors duration-300 hover:border-gold/70 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+            >
+              <span className="flex flex-col gap-1">
+                <span className="font-mono text-[8px] uppercase tracking-[0.22em] text-jade-light">
+                  Retour en haut
+                </span>
+                <span className="font-display text-xs font-semibold">Accueil</span>
+              </span>
+              <span className="grid size-10 shrink-0 place-items-center rounded-full bg-[linear-gradient(135deg,#5fe3bf,#e9b75b)] text-ink shadow-[0_0_20px_-6px_rgba(95,227,191,0.6)]">
+                <ArrowUp aria-hidden="true" className="size-5 motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:-translate-y-1" />
+              </span>
+            </Link>
+          </div>
         </div>
 
         <div className="grid gap-12 py-14 sm:grid-cols-2 lg:grid-cols-[1.5fr_0.9fr_1.1fr_1.2fr]">

@@ -53,7 +53,9 @@ utiliser un domaine personnalisé à la racine (recommandé) ou le dépôt
 1. Ajouter la variable de dépôt `VITE_API_URL` dans **Settings → Secrets and
    variables → Actions → Variables** avec `https://<api>/api`.
 2. Dans **Settings → Pages**, choisir **GitHub Actions** comme source.
-3. Pousser sur `main` ou `master`. Le workflow
+3. Après autorisation de mise en ligne, lancer manuellement depuis l’onglet
+   **Actions → GitHub Pages → Run workflow**. Un push ne déclenche pas ce workflow.
+   Le workflow
    `.github/workflows/github-pages.yml` construit le client, prépare le
    fallback SPA `404.html` et publie `client/dist`.
 4. Ajouter l'origine GitHub Pages ou le domaine personnalisé dans
