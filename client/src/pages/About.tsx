@@ -162,12 +162,6 @@ export default function About() {
 
         <Reveal delay={0.1} className="relative">
           <figure className="relative mx-auto w-full max-w-[460px] overflow-hidden rounded-sm border border-ink/10 bg-sand shadow-card">
-            <img
-              src="/narcisse-malanda-directeur.jpeg"
-              alt="Narcisse Malanda, directeur général de MN Consulting Engineering"
-              loading="lazy"
-              className="aspect-[4/5] w-full object-cover object-[center_28%]"
-            />
             <figcaption className="theme-surface relative bg-ink px-5 py-4 text-paper sm:px-6">
               <p className="font-display text-lg font-semibold tracking-tight">
                 Narcisse Malanda
@@ -259,7 +253,7 @@ export default function About() {
               <Reveal key={member.id} delay={index * 0.06}>
                 <article className="group">
                   <div className="relative aspect-[3/4] overflow-hidden rounded-sm bg-sand">
-                    {member.photo ? (
+                    {member.photo && member.name !== "Narcisse Malanda" ? (
                       <img
                         src={member.photo}
                         alt={`${member.name} — ${member.role}`}

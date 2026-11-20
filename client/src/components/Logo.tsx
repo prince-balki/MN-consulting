@@ -27,7 +27,7 @@ export function Logo({ variant = "dark", className }: LogoProps) {
             variant === "light" ? "text-paper" : "text-ink",
           )}
         >
-          MN Consulting
+          MN Consulting Engineering
         </span>
         <span
           className={cn(

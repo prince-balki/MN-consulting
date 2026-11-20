@@ -6,13 +6,13 @@ export const SITE = {
   url: "https://www.mnconsulting.cg",
   tagline: "Bureau d'études · Architecture · Génie civil",
   description:
-    "Bureau d'études techniques et d'ingénierie basé à Moungali, Brazzaville. Architecture, structures, maîtrise d'œuvre, contrôle des travaux et expertises immobilières.",
+    "Bureau d'études techniques et d'ingénierie basé à Mougali, Brazzaville. Architecture, structures, maîtrise d'œuvre, contrôle des travaux et expertises immobilières.",
   email: "mnconsulting.e@gmail.com",
   phone: "+242 06 979 17 36",
   phoneHref: "+242069791736",
   secondaryPhone: "+242 05 556 61 00",
   whatsapp: "https://wa.me/242069791736",
-  address: "1811, avenue Loutassi, Moungali",
+  address: "1811, Avenue Loutassi; Mougali",
   city: "Brazzaville",
   country: "République du Congo",
   hours: "Lundi – Vendredi, 8h00 – 17h00",
@@ -20,7 +20,7 @@ export const SITE = {
   rccm: "CG-BZV-01-2013-B13-00413",
   capital: "1 000 000 FCFA",
   orderRegistration: "16",
-  mapUrl: "https://www.google.com/maps/search/?api=1&query=1811%20Avenue%20Loutassi%2C%20Moungali%2C%20Brazzaville",
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=1811%20Avenue%20Loutassi%2C%20Mougali%2C%20Brazzaville",
   social: {
     linkedin: "",
     facebook: "",
@@ -57,7 +57,7 @@ export const VALUES = [
     icon: "MapPin",
     title: "Proximité",
     description:
-      "Basé à Moungali, Brazzaville, le bureau intervient au plus près des projets et des réalités du terrain congolais.",
+      "Basé à Mougali, Brazzaville, le bureau intervient au plus près des projets et des réalités du terrain congolais.",
   },
   {
     icon: "Sparkles",
@@ -535,7 +535,7 @@ export const fallbackTeam: TeamMember[] = [
     name: "Narcisse Malanda",
     role: "Fondateur · Directeur général",
     bio: "Fondateur de MN Consulting Engineering, créé à Brazzaville en 2013. Le bureau est inscrit au tableau de l’Ordre des ingénieurs du Congo sous le numéro 16.",
-    photo: "/narcisse-malanda-directeur.jpeg",
+    photo: null,
     linkedin: "",
     order: 1,
     published: true,

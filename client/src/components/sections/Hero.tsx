@@ -91,13 +91,7 @@ export function Hero() {
           <div className="absolute -left-5 -top-5 h-full w-full rounded-sm border border-gold/30" />
           <div className="relative rounded-sm bg-[linear-gradient(150deg,rgba(233,183,91,0.8),rgba(20,166,126,0.55)_45%,rgba(255,255,255,0.08))] p-px shadow-[0_45px_100px_-45px_rgba(20,166,126,0.55)]">
             <div className="relative overflow-hidden rounded-[1px] bg-ink-soft">
-              <img
-                src="/narcisse-malanda-directeur.jpeg"
-                alt="Narcisse Malanda, fondateur et directeur général de MN Consulting Engineering"
-                className="aspect-[608/1067] w-full object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/15 to-transparent" />
-              <div className="on-media absolute inset-x-5 bottom-5">
+              <div className="on-media relative px-8 py-32">
                 <Link to="/a-propos" className="group block">
                   <p className="font-mono text-[9px] uppercase tracking-[0.22em] text-jade-light">
                     Fondateur · Directeur général

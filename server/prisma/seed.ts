@@ -303,7 +303,7 @@ async function main() {
       name: "Narcisse Malanda",
       role: "Fondateur · Directeur général",
       bio: "Fondateur de MN Consulting Engineering, créé à Brazzaville en 2013. Le bureau est inscrit au tableau de l’Ordre des ingénieurs du Congo sous le numéro 16.",
-      photo: "/narcisse-malanda-directeur.jpeg",
+      photo: null,
       linkedin: null,
       order: 1,
       published: true,

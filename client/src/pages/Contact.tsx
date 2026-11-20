@@ -110,8 +110,8 @@ export default function Contact() {
             Une équipe disponible et à l'écoute.
           </h2>
           <p className="mt-3 max-w-md text-[14.5px] leading-relaxed text-steel">
-            Passez nous voir au centre-ville de Brazzaville ou contactez-nous par
-            téléphone, e-mail ou WhatsApp.
+            Passez nous voir au {SITE.address}, {SITE.city.toUpperCase()} ou
+            contactez-nous par téléphone, e-mail ou WhatsApp.
           </p>
 
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -204,7 +204,7 @@ export default function Contact() {
                   Brazzaville
                 </p>
                 <p className="font-mono text-[9px] uppercase tracking-[0.18em] text-paper/45">
-                  Centre-ville
+                  {SITE.address}
                 </p>
               </div>
             </div>
